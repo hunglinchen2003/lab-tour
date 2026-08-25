@@ -41,6 +41,54 @@
       <path d="M16 9.2a4.2 4.2 0 0 1 0 5.6M18.5 7a7 7 0 0 1 0 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
     </svg>`;
 
+  const flagSvg = {
+    zh: `
+      <svg class="flag" viewBox="0 0 32 21" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="21" fill="#fe0000"/>
+        <rect width="16" height="10.5" fill="#000095"/>
+        <g transform="translate(8 5.25)" fill="#fff">
+          ${Array.from({ length: 12 }, (_, i) => `<polygon points="0,-4.35 0.7,-1.85 -0.7,-1.85" transform="rotate(${i * 30})"/>`).join("")}
+          <circle r="2.15" fill="#000095"/>
+          <circle r="1.55" fill="#fff"/>
+        </g>
+      </svg>`,
+    en: `
+      <svg class="flag" viewBox="0 0 32 21" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="21" fill="#bf0a30"/>
+        <g fill="#fff">
+          <rect y="1.615" width="32" height="1.615"/>
+          <rect y="4.846" width="32" height="1.615"/>
+          <rect y="8.077" width="32" height="1.615"/>
+          <rect y="11.308" width="32" height="1.615"/>
+          <rect y="14.538" width="32" height="1.615"/>
+          <rect y="17.769" width="32" height="1.615"/>
+        </g>
+        <rect width="12.8" height="11.308" fill="#002868"/>
+        <g fill="#fff">
+          ${[0, 1, 2, 3, 4]
+            .flatMap((row) => {
+              const count = row % 2 === 0 ? 6 : 5;
+              const x0 = row % 2 === 0 ? 1.15 : 2.2;
+              return Array.from({ length: count }, (_, col) => {
+                const x = x0 + col * 2.1;
+                const y = 1.15 + row * 2.05;
+                return `<polygon points="${x},${y - 0.55} ${x + 0.16},${y - 0.16} ${x + 0.55},${y - 0.16} ${x + 0.22},${y + 0.08} ${x + 0.34},${y + 0.48} ${x},${y + 0.22} ${x - 0.34},${y + 0.48} ${x - 0.22},${y + 0.08} ${x - 0.55},${y - 0.16} ${x - 0.16},${y - 0.16}"/>`;
+              });
+            })
+            .join("")}
+        </g>
+      </svg>`,
+    ja: `
+      <svg class="flag" viewBox="0 0 32 21" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="21" fill="#fff"/>
+        <circle cx="16" cy="10.5" r="6.2" fill="#bc002d"/>
+      </svg>`,
+  };
+
+  function flag(id) {
+    return flagSvg[id] || "";
+  }
+
   function t(key) {
     return ui[state.lang || "zh"][key];
   }
@@ -129,7 +177,7 @@
             .map(
               (item) => `
             <button class="card" data-lang="${item.id}">
-              <span class="lang-flag">${item.code}</span>
+              <span class="lang-flag">${flag(item.id)}</span>
               <span>
                 <h2>${item.native}</h2>
                 <p>${item.label}</p>
@@ -149,7 +197,7 @@
       <section class="screen">
         <div class="topbar">
           <button class="back" data-go="language">← ${t("back")}</button>
-          <span class="chip">${langMeta().native}</span>
+          <span class="chip">${flag(state.lang)}${langMeta().native}</span>
         </div>
         <p class="eyebrow">${t("kicker")}</p>
         <h1 class="headline">${t("chooseMode")}</h1>
@@ -182,7 +230,7 @@
           <button class="back" data-go="mode">← ${t("back")}</button>
           <span class="chip">${state.mode === "video" ? t("video") : t("audio")}</span>
         </div>
-        <p class="eyebrow">${langMeta().native}</p>
+        <p class="eyebrow lang-now">${flag(state.lang)}${langMeta().native}</p>
         <h1 class="headline">${t("stations")}</h1>
         <div class="stack">
           ${stations
