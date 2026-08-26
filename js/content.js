@@ -94,7 +94,11 @@ window.LAB_TOUR = {
         en: "Genomics Analysis Platform",
         ja: "ゲノム解析プラットフォーム",
       },
-      video: { zh: "", en: "", ja: "" },
+      video: {
+        zh: "https://youtu.be/Fr0x0pwaE0A",
+        en: "https://youtu.be/8D27JXJnVrc",
+        ja: "https://youtu.be/cTgho3K7ZuI",
+      },
       audio: {
         zh: "audio/02_audio_Chinese.mp3",
         en: "audio/02_audio_English.mp3",

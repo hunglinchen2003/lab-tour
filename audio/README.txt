@@ -4,11 +4,11 @@
 01_audio_Chinese.mp3
 01_audio_English.mp3
 01_audio_Japan.mp3
-
-之後請沿用同一命名：
 02_audio_Chinese.mp3
 02_audio_English.mp3
 02_audio_Japan.mp3
+
+之後請沿用同一命名：
 03_audio_Chinese.mp3
 03_audio_English.mp3
 03_audio_Japan.mp3
