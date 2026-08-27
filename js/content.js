@@ -126,11 +126,15 @@ window.LAB_TOUR = {
         en: "Glycomedicine Core Resources",
         ja: "糖医学コアリソース",
       },
-      video: { zh: "", en: "", ja: "" },
+      video: {
+        zh: "https://youtu.be/Z0VE6mDA35I",
+        en: "https://youtu.be/y1Ex68WP7hs",
+        ja: "https://youtu.be/P3EinHxaHMc",
+      },
       audio: {
-        zh: "audio/04_audio_Chinese.mp3",
-        en: "audio/04_audio_English.mp3",
-        ja: "audio/04_audio_Japan.mp3",
+        zh: "audio/4_audio_Chinese.mp3",
+        en: "audio/4_audio_ENG.mp3",
+        ja: "audio/4_audio_JPN.mp3",
       },
     },
     {

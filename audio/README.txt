@@ -7,6 +7,9 @@
 02_audio_Chinese.mp3
 02_audio_English.mp3
 02_audio_Japan.mp3
+4_audio_Chinese.mp3
+4_audio_ENG.mp3
+4_audio_JPN.mp3
 
 之後請沿用同一命名：
 03_audio_Chinese.mp3
