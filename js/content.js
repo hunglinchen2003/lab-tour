@@ -112,11 +112,15 @@ window.LAB_TOUR = {
         en: "AI Drug Discovery Platform",
         ja: "AI創薬解析プラットフォーム",
       },
-      video: { zh: "", en: "", ja: "" },
+      video: {
+        zh: "https://youtu.be/lq3WxwGRNTY",
+        en: "https://youtu.be/v7SEPh_rqi4",
+        ja: "https://youtu.be/8K53Rf89agg",
+      },
       audio: {
-        zh: "audio/03_audio_Chinese.mp3",
-        en: "audio/03_audio_English.mp3",
-        ja: "audio/03_audio_Japan.mp3",
+        zh: "audio/3_audio_Chinese.mp3",
+        en: "audio/3_audio_ENG.mp3",
+        ja: "audio/3_audio_JPN.mp3",
       },
     },
     {
