@@ -7,6 +7,7 @@
   --card: rgba(255, 248, 242, 0.82);
   --teal: #ea580c;
   --teal-dim: rgba(234, 88, 12, 0.14);
+  --ink-accent: #1d4ed8;
   --blue: #fb923c;
   --warn: #c2410c;
   --shadow: 0 16px 40px rgba(194, 65, 12, 0.14);
@@ -137,7 +138,7 @@ button {
   border-radius: 16px;
   display: grid;
   place-items: center;
-  color: var(--teal);
+  color: var(--ink-accent);
   background: linear-gradient(160deg, #ffffff, rgba(255, 237, 213, 0.85));
   border: 1px solid rgba(234, 88, 12, 0.28);
   box-shadow: 0 0 24px rgba(255, 255, 255, 0.55);
@@ -160,7 +161,7 @@ button {
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--ink-accent);
 }
 
 .lang-now {
@@ -296,8 +297,8 @@ button {
   border-radius: 18px;
   display: grid;
   place-items: center;
-  background: linear-gradient(180deg, rgba(234, 88, 12, 0.16), rgba(255, 255, 255, 0.7));
-  color: var(--teal);
+  background: linear-gradient(180deg, rgba(29, 78, 216, 0.12), rgba(255, 255, 255, 0.7));
+  color: var(--ink-accent);
   flex-shrink: 0;
 }
 
@@ -323,9 +324,9 @@ button {
 }
 
 .station.ready .num {
-  background: var(--teal-dim);
-  border-color: rgba(234, 88, 12, 0.35);
-  color: var(--teal);
+  background: rgba(29, 78, 216, 0.12);
+  border-color: rgba(29, 78, 216, 0.35);
+  color: var(--ink-accent);
 }
 
 .body {
