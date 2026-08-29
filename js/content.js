@@ -4,10 +4,11 @@
  * 聲音：把檔案放到 audio/ 資料夾，路徑例如 audio/02_audio_CH.mp3
  */
 window.LAB_TOUR = {
+  pageTitle: "陳宏霖博士實驗室簡介  Dr. Hung-Lin Chen's Lab Tour",
   ui: {
     zh: {
-      brand: "實驗室導覽",
-      kicker: "Core Facility",
+      brand: "陳宏霖博士實驗室簡介",
+      kicker: "Dr. Hung-Lin Chen's Lab Tour",
       chooseLang: "請選擇語言",
       chooseLangHint: "選擇語言後，接著挑選影像或聲音導覽",
       chooseMode: "選擇導覽方式",
@@ -25,8 +26,8 @@ window.LAB_TOUR = {
       missing: "此站點媒體尚未上架",
     },
     en: {
-      brand: "Lab Tour",
-      kicker: "Core Facility",
+      brand: "Dr. Hung-Lin Chen's Lab Tour",
+      kicker: "陳宏霖博士實驗室簡介",
       chooseLang: "Choose your language",
       chooseLangHint: "Next, pick a video or audio guide",
       chooseMode: "Choose a tour mode",
@@ -44,8 +45,8 @@ window.LAB_TOUR = {
       missing: "This station is not available yet",
     },
     ja: {
-      brand: "研究室ガイド",
-      kicker: "Core Facility",
+      brand: "陳宏霖博士の研究室案内",
+      kicker: "Dr. Hung-Lin Chen's Lab Tour",
       chooseLang: "言語を選択",
       chooseLangHint: "次に映像または音声ガイドを選べます",
       chooseMode: "ガイドの種類を選択",

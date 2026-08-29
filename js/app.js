@@ -1,5 +1,5 @@
 (() => {
-  const { ui, languages, stations } = window.LAB_TOUR;
+  const { ui, languages, stations, pageTitle } = window.LAB_TOUR;
   const app = document.getElementById("app");
   const toastEl = document.getElementById("toast");
   const mediaReady = new Map();
@@ -159,14 +159,14 @@
 
   function renderLanguage() {
     document.documentElement.lang = "zh-Hant";
-    document.title = "實驗室導覽";
+    document.title = pageTitle;
     app.innerHTML = `
       <section class="screen">
         <div class="brand">
           <div class="mark">${flaskSvg}</div>
           <div>
-            <div class="eyebrow">Laboratory Tour</div>
-            <strong>實驗室導覽</strong>
+            <div class="eyebrow">Dr. Hung-Lin Chen's Lab Tour</div>
+            <strong>陳宏霖博士實驗室簡介</strong>
           </div>
         </div>
         <p class="eyebrow">Language</p>
@@ -192,7 +192,7 @@
   function renderMode() {
     document.documentElement.lang =
       state.lang === "en" ? "en" : state.lang === "ja" ? "ja" : "zh-Hant";
-    document.title = t("brand");
+    document.title = pageTitle;
     app.innerHTML = `
       <section class="screen">
         <div class="topbar">
@@ -222,7 +222,7 @@
   }
 
   async function renderStations() {
-    document.title = t("brand");
+    document.title = pageTitle;
     const readiness = await Promise.all(stations.map((item) => isReady(item)));
     app.innerHTML = `
       <section class="screen">
