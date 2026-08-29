@@ -1,10 +1,10 @@
 :root {
-  --bg: #fff6ef;
-  --bg-2: #ffd2b3;
+  --bg: #ff7a2e;
+  --bg-2: #ff8f45;
   --ink: #3b1d12;
-  --muted: #9a5c42;
-  --line: rgba(255, 255, 255, 0.62);
-  --card: rgba(255, 255, 255, 0.78);
+  --muted: #7a3d22;
+  --line: rgba(255, 255, 255, 0.38);
+  --card: rgba(255, 248, 242, 0.82);
   --teal: #ea580c;
   --teal-dim: rgba(234, 88, 12, 0.14);
   --blue: #fb923c;
@@ -62,17 +62,17 @@ button {
   overflow: hidden;
   pointer-events: none;
   background:
-    radial-gradient(900px 560px at 8% -12%, #ffffff 0%, transparent 58%),
-    radial-gradient(780px 500px at 108% 6%, rgba(255, 255, 255, 0.92) 0%, transparent 52%),
-    linear-gradient(165deg, #ff7a2e 0%, #ff9a57 38%, #ffe8d6 72%, #fff8f2 100%);
+    radial-gradient(620px 380px at 10% -10%, rgba(255, 255, 255, 0.22) 0%, transparent 58%),
+    radial-gradient(520px 340px at 110% 8%, rgba(255, 214, 170, 0.35) 0%, transparent 55%),
+    linear-gradient(165deg, #ff5c0a 0%, #ff6f1f 22%, #ff832e 48%, #ff9448 74%, #ffa05a 100%);
 }
 
 .grid {
   position: absolute;
   inset: -20%;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.28) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px);
   background-size: 42px 42px;
   transform: rotate(12deg);
   mask-image: radial-gradient(circle at 50% 30%, black, transparent 75%);
@@ -86,21 +86,21 @@ button {
 }
 
 .orb-a {
-  width: 280px;
-  height: 280px;
-  left: -70px;
-  top: 40px;
-  background: #ffffff;
-  opacity: 0.7;
+  width: 240px;
+  height: 240px;
+  left: -80px;
+  top: 30px;
+  background: #ffc089;
+  opacity: 0.35;
 }
 
 .orb-b {
-  width: 240px;
-  height: 240px;
-  right: -60px;
-  bottom: 40px;
-  background: #ffe0c7;
-  opacity: 0.8;
+  width: 220px;
+  height: 220px;
+  right: -70px;
+  bottom: 30px;
+  background: #ff5c0a;
+  opacity: 0.42;
 }
 
 .screen {
@@ -141,6 +141,18 @@ button {
   background: linear-gradient(160deg, #ffffff, rgba(255, 237, 213, 0.85));
   border: 1px solid rgba(234, 88, 12, 0.28);
   box-shadow: 0 0 24px rgba(255, 255, 255, 0.55);
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 6%;
+  flex-shrink: 0;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 18px rgba(154, 52, 18, 0.28);
 }
 
 .eyebrow {

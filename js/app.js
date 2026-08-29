@@ -163,7 +163,7 @@
     app.innerHTML = `
       <section class="screen">
         <div class="brand">
-          <div class="mark">${flaskSvg}</div>
+          <img class="avatar" src="images/avatar.png" alt="陳宏霖博士" width="72" height="72" />
           <div>
             <div class="eyebrow">Dr. Hung-Lin Chen's Lab Tour</div>
             <strong>陳宏霖博士實驗室簡介</strong>
