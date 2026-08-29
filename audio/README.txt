@@ -13,8 +13,6 @@
 4_audio_Chinese.mp3
 4_audio_ENG.mp3
 4_audio_JPN.mp3
-
-之後 05 請沿用：
-5_audio_Chinese.mp3
+5_audio_CHN.mp3
 5_audio_ENG.mp3
 5_audio_JPN.mp3
